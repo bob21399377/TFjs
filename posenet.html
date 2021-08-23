@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>PoseNet</title>
+    <link rel="shortcut icon" href="#">
+    <!--Load tensorflow-->
+    <script src="http://unpkg.com/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <!-- Load Posenet -->
+    <script src="https://unpkg.com/@tensorflow-models/posenet@2.2.2/dist/posenet.min.js"></script>
+    <!--JavaScript-->
+    <script src="posenet.js"></script>
+</head>
+<body>
+    <!--HTML-->
+    <input id="input" type="file" accept=".png,.jpg,.jpeg" onchange="selectImgFile(this.files)">
+    <img id='image'>
+    <br>
+    <button onclick="posenet_model()">送出</button>
+    
+    
+</body>
+
+</html>
