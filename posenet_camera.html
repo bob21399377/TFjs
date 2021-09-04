@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>PoseNet</title>
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Load tensorflow-->
+    <script src="http://unpkg.com/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl"></script>
+    <!-- Load Posenet -->
+    <script src="https://unpkg.com/@tensorflow-models/posenet@2.2.2/dist/posenet.min.js"></script>
+</head>
+
+<body>
+    <input id="camera" type="file" accept="video/*" capture="camera">
+    <button onclick="selectvideoFile()">送出</button>
+    <video id="video" controls muted></video>
+    <script src="posenet_camera.js"></script>
+</body>
+
+</html>
